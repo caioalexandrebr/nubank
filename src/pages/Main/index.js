@@ -1,6 +1,8 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import QRCode from 'react-native-qrcode-generator';
+
 import Header from '../../components/Header';
 import Tabs from '../../components/Tabs';
 
@@ -20,10 +22,15 @@ export default function Main() {
   return (
     <Container>
       <Header />
-
       <Content>
         <Card>
           <CardHeader>
+            <QRCode
+              value="ola mundo!"
+              size={200}
+              bgColor="black"
+              fgColor="white"
+            />
             <Icon name="attach-money" size={28} color="#666" />
             <Icon name="visibility-off" size={28} color="#666" />
           </CardHeader>
@@ -39,7 +46,6 @@ export default function Main() {
           </CardFooter>
         </Card>
       </Content>
-
       <Tabs />
     </Container>
   );
