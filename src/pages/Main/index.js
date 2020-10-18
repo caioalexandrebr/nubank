@@ -1,9 +1,8 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import QRCode from 'react-native-qrcode-generator';
-
 import Header from '../../components/Header';
+import Menu from '../../components/Menu';
 import Tabs from '../../components/Tabs';
 
 import {
@@ -23,14 +22,9 @@ export default function Main() {
     <Container>
       <Header />
       <Content>
+        <Menu />
         <Card>
           <CardHeader>
-            <QRCode
-              value="ola mundo!"
-              size={200}
-              bgColor="black"
-              fgColor="white"
-            />
             <Icon name="attach-money" size={28} color="#666" />
             <Icon name="visibility-off" size={28} color="#666" />
           </CardHeader>
