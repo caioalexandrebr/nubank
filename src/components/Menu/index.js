@@ -2,9 +2,16 @@ import React from 'react';
 import QRCode from 'react-native-qrcode-generator';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import {View} from 'react-native';
-
-import {Container, Code, Nav, NavItem, NavInfo, NavText} from './styles';
+import {
+  Container,
+  Code,
+  Nav,
+  NavItem,
+  NavInfo,
+  NavText,
+  SignOutButton,
+  SignOutButtonText,
+} from './styles';
 
 function Menu() {
   return (
@@ -41,6 +48,9 @@ function Menu() {
           </NavInfo>
           <Icon name="keyboard-arrow-right" size={20} color="#fff" />
         </NavItem>
+        <SignOutButton onPress={() => {}}>
+          <SignOutButtonText>SAIR DO APP</SignOutButtonText>
+        </SignOutButton>
       </Nav>
     </Container>
   );
