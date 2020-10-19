@@ -23,7 +23,12 @@ function Menu({translateY}) {
         }),
       }}>
       <Code>
-        <QRCode value="ola mundo!" size={80} bgColor="#8b10ae" fgColor="#fff" />
+        <QRCode
+          value="https://caioalexandre.com/"
+          size={80}
+          bgColor="#8b10ae"
+          fgColor="#fff"
+        />
       </Code>
       <Nav>
         <NavItem>
