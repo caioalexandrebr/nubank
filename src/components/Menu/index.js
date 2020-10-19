@@ -13,9 +13,15 @@ import {
   SignOutButtonText,
 } from './styles';
 
-function Menu() {
+function Menu({translateY}) {
   return (
-    <Container>
+    <Container
+      style={{
+        opacity: translateY.interpolate({
+          inputRange: [0, 150],
+          outputRange: [0, 1],
+        }),
+      }}>
       <Code>
         <QRCode value="ola mundo!" size={80} bgColor="#8b10ae" fgColor="#fff" />
       </Code>
